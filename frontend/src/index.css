@@ -1,0 +1,75 @@
+
+:root {
+  --b1: #F1F1FB;
+  --b2: #EA4C3C;
+  --b3: #393A62;
+  --b4: #9292AE;
+  --b5: #DBA09E;
+  --b6: #747399;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: white;
+  font-size: 14px;
+}
+
+h1{
+  font-size: 2rem;
+  color: var(--b3);
+  font-weight: bold;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+aside, main{
+  padding: 20px;
+}
+aside {
+  background: #F1F1FB;
+  width: 170px;
+}
+main {
+  background-color: white;
+}
+
+.main-nav ul {
+  list-style: none;
+  margin-left: -3rem;
+}
+.main-nav__element{
+  margin-bottom: 0.5rem;
+}
+
+.main-nav__element-icon{
+  font-size: 1.5rem;
+  color: var(--b6);
+}
+.main-nav__element a {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  text-decoration: none;
+  color: var(--b6);
+  border-left: 0.3rem solid transparent;
+  padding-left: 0.4rem;
+}
+
+.active,
+.main-nav__element a:hover,
+.main-nav__element a:active{
+  box-sizing: border-box;
+  border-left: 0.3rem solid var(--b2) !important;
+  color: var(--b3) !important;
+}
+
+
